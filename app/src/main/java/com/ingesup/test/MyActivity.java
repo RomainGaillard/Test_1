@@ -17,6 +17,7 @@ public class MyActivity extends Activity {
         setContentView(R.layout.activity_my);
 
         Button btnMonNom = (Button)findViewById(R.id.btn_mon_nom);
+        Button btnRomainGaillard = (Button)findViewById(R.id.btn_RomainGaillard);
 
         btnMonNom.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,6 +25,13 @@ public class MyActivity extends Activity {
 
                 Toast.makeText(getApplicationContext(), "Bonjour !", Toast.LENGTH_LONG).show();
 
+            }
+        });
+
+        btnRomainGaillard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Bonjour Romain !", Toast.LENGTH_LONG).show();
             }
         });
 
